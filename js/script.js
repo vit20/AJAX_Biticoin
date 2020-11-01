@@ -2,7 +2,6 @@
 
 
 $( function() {
-    console.log("Działa");
 });
 
 let buy = $(".buy");
@@ -27,29 +26,29 @@ function getCurrency() {
         sell.html(afterSell);
         
         if (beforeBuy < afterBuy) {
-        console.log("zwiekszylo sie");
+        
         $(".arrow-buy").html(`<i class="fas fa-long-arrow-alt-up green" ></i>`)
                     
         } else if ( beforeBuy === afterBuy) {
-        console.log("taki sam");
+        
         $(".arrow-buy").html(`<i class="fas fa-minus blue"></i>`)
 
         } else {
-        console.log("zmniejszylo się");
+        
         $(".arrow-buy").html(`<i class="fas fa-long-arrow-alt-down red"></i>`)
         };
 
 
         if (beforeSell < afterSell) {
-         console.log("zwiekszylo sie");
+        
          $(".arrow-sell").html(`<i class="fas fa-long-arrow-alt-up green" ></i>`)
                         
         } else if ( beforeSell === afterSell) {
-        console.log("taki sam");
+        
         $(".arrow-sell").html(`<i class="fas fa-minus blue" ></i>`)
     
         } else {
-        console.log("zmniejszylo się");
+        
         $(".arrow-sell").html(`<i class="fas fa-long-arrow-alt-down red"></i>`)
         };
         
